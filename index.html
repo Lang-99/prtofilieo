@@ -18,7 +18,6 @@
             --text-secondary: #8c8c8c;
             --glass-bg: rgba(255, 255, 255, 0.02);
             --glass-border: rgba(255, 255, 255, 0.08);
-            --accent-glow: rgba(255, 255, 255, 0.15);
         }
 
         /* Base Configuration */
@@ -59,9 +58,7 @@
             background: #333;
         }
 
-        /* ---------------------------------- */
         /* Fluid Liquid Background (Dynamic) */
-        /* ---------------------------------- */
         .liquid-container {
             position: fixed;
             top: 0;
@@ -114,9 +111,7 @@
             }
         }
 
-        /* ---------------------------------- */
-        /* Premium UI Components Layout       */
-        /* ---------------------------------- */
+        /* Header Navigation */
         header {
             width: 100%;
             max-width: 900px;
@@ -172,7 +167,7 @@
             50% { opacity: 1; }
         }
 
-        /* Main Container */
+        /* Main Area */
         main {
             width: 100%;
             max-width: 900px;
@@ -231,7 +226,7 @@
             font-weight: 300;
         }
 
-        /* Buttons Group */
+        /* Buttons */
         .cta-group {
             margin-top: 2.5rem;
             display: flex;
@@ -280,9 +275,7 @@
             border-color: rgba(255, 255, 255, 0.25);
         }
 
-        /* ---------------------------------- */
-        /* Content Section (Explore Target)   */
-        /* ---------------------------------- */
+        /* Content Universe Section */
         .section-title {
             font-family: 'Syne', sans-serif;
             font-size: 2rem;
@@ -315,8 +308,6 @@
             border-radius: 24px;
             padding: 2.5rem 2rem;
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            position: relative;
-            overflow: hidden;
         }
 
         .card:hover {
@@ -370,42 +361,7 @@
             color: rgba(255, 255, 255, 0.3);
         }
 
-        /* Modern Toast Alert (Only on real developer tools attempt) */
-        .toast {
-            position: fixed;
-            bottom: -100px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: rgba(10, 10, 10, 0.95);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(25px);
-            -webkit-backdrop-filter: blur(25px);
-            padding: 14px 28px;
-            border-radius: 100px;
-            color: #ffffff;
-            font-size: 0.8rem;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            z-index: 9999;
-            transition: bottom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
-        }
-
-        .toast.show {
-            bottom: 30px;
-        }
-
-        .toast-dot {
-            width: 6px;
-            height: 6px;
-            background: #fff;
-            border-radius: 50%;
-        }
-
-        /* Mouse Glow Effect (Only active on Desktop) */
+        /* Mouse Glow */
         @media (hover: hover) {
             .interactive-cursor {
                 width: 300px;
@@ -422,16 +378,15 @@
 </head>
 <body>
 
-    <!-- Moving Background Liquid Blobs -->
+    <!-- Liquid Background Elements -->
     <div class="liquid-container">
         <div class="liquid-blob blob-1"></div>
         <div class="liquid-blob blob-2"></div>
     </div>
 
-    <!-- Mouse Glow Follower (PC Only) -->
+    <!-- Cursor Follower for PC -->
     <div class="interactive-cursor" id="cursorGlow"></div>
 
-    <!-- Header Navigation -->
     <header>
         <div class="logo">lngit22</div>
         <div class="status-pill">
@@ -440,9 +395,7 @@
         </div>
     </header>
 
-    <!-- Main Content Area -->
     <main>
-        <!-- Hero Introduction Box -->
         <div class="hero-panel">
             <span class="tagline">Official Portfolio</span>
             <h1 class="title">My Gaming &<br>Random Universe.</h1>
@@ -450,66 +403,49 @@
                 Halo, aku <strong>lngit22</strong>! Kreator konten video game dan bermacam-macam hal acak sesuka hati. Selamat datang di ruang pribadiku, mari berteman!
             </p>
             <div class="cta-group">
-                <!-- Ganti link di bawah ini dengan tautan channel YouTube-mu -->
-                <a href="https://www.youtube.com/@mlanNgit" target="_blank" class="btn-premium">Subscribe Channel</a>
+                <a href="https://youtube.com" target="_blank" class="btn-premium">Subscribe Channel</a>
                 <button class="btn-secondary" onclick="scrollToContent()">Lihat Selengkapnya</button>
             </div>
         </div>
 
-        <!-- My Content Universe (Target of Explore Button) -->
         <section id="universe-section">
             <h2 class="section-title">My Universe</h2>
             <div class="cards-grid">
-                
-                <!-- Card 1: Gaming -->
                 <div class="card">
                     <span class="card-icon">🎮</span>
                     <span class="card-tag">Main Activity</span>
                     <h3>Game Space</h3>
                     <p>Tempat aku bermain game seru secara acak, mulai dari petualangan seru sampai tantangan konyol bersama teman.</p>
                 </div>
-
-                <!-- Card 2: Random Content -->
                 <div class="card">
                     <span class="card-icon">🌀</span>
                     <span class="card-tag">Creative</span>
                     <h3>Anything Random</h3>
                     <p>Tidak ada aturan pasti! Dari video meme kocak, tren seru, sampai eksperimen apa pun yang melintas di pikiranku.</p>
                 </div>
-
-                <!-- Card 3: Support -->
                 <div class="card">
                     <span class="card-icon">⭐</span>
                     <span class="card-tag">Community</span>
                     <h3>Like & Subscribe</h3>
                     <p>Dukunganmu sangat berarti untuk membantuku terus berkreasi dan membuat video-video yang menghibur!</p>
                 </div>
-
             </div>
         </section>
     </main>
 
-    <!-- Footer Area -->
     <footer>
         <div>© 2026 lngit22. All rights reserved.</div>
-        <div>Made with true aesthetics.</div>
+        <div>Protected with high-tier tech.</div>
     </footer>
 
-    <!-- Quiet Security Toast Alert -->
-    <div class="toast" id="securityToast">
-        <span class="toast-dot"></span>
-        <span id="toastMessage">Maaf, halaman ini diproteksi sistem keamanan.</span>
-    </div>
-
+    <!-- Security Script Integration -->
     <script>
-        // Smooth scroll to Universe section when clicking "Lihat Selengkapnya"
+        // Smooth Scroll
         function scrollToContent() {
-            document.getElementById('universe-section').scrollIntoView({
-                behavior: 'smooth'
-            });
+            document.getElementById('universe-section').scrollIntoView({ behavior: 'smooth' });
         }
 
-        // Interactive Custom Cursor Halo Tracker (Desktop Only)
+        // Custom Cursor Glow Tracker (Desktop Only)
         const cursorGlow = document.getElementById('cursorGlow');
         if (window.matchMedia('(hover: hover)').matches) {
             document.addEventListener('mousemove', (e) => {
@@ -518,75 +454,77 @@
             });
         }
 
-        // Silent Custom Security Toast Trigger
-        let toastTimeout;
-        function showSecurityToast(msg) {
-            const toast = document.getElementById('securityToast');
-            const toastMsg = document.getElementById('toastMessage');
+        // ====================================================
+        // INTEGRATED ULTRA SECURITY (BY LNGIT22 & CODER TEAM)
+        // ====================================================
+
+        var tryCount = 0;
+        var minimalUserResponseInMiliseconds = 200;
+
+        function check() { 
+            console.clear();
+            var before = new Date().getTime();
+            debugger; // Di sinilah penelusur DevTools akan terhenti
+            var after = new Date().getTime();
             
-            toastMsg.innerText = msg;
-            toast.classList.add('show');
-            
-            clearTimeout(toastTimeout);
-            toastTimeout = setTimeout(() => {
-                toast.classList.remove('show');
-            }, 3000);
+            if (after - before > minimalUserResponseInMiliseconds) { 
+                // Jika DevTools terdeteksi aktif, hancurkan halaman dan alihkan secara paksa
+                document.write("<div style='background:#000;color:#fff;width:100vw;height:100vh;display:flex;justify-content:center;align-items:center;font-family:sans-serif;font-size:1.5rem;'>Akses ditutup. Silakan tutup Developer Tools! ❌</div>");
+                self.location.replace(
+                    window.location.protocol + "//" + window.location.host + window.location.pathname
+                );  
+            } else { 
+                before = null;
+                after = null;
+                delete before;
+                delete after;
+            }
+            setTimeout(check, 100);
         }
-
-        // ----------------------------------------------------
-        // SILENT BACKGROUND SECURITY (ANTI-F12 & VIEW SOURCE)
-        // ----------------------------------------------------
         
-        // Block Right Click Menu
-        document.addEventListener('contextmenu', (e) => {
-            e.preventDefault();
-            showSecurityToast('Akses terbatas. Klik kanan dinonaktifkan.');
-        });
+        // Menjalankan pengecekan deteksi debugger
+        check();
 
-        // Block Developer Keys
-        document.addEventListener('keydown', (e) => {
-            // F12 Key
-            if (e.keyCode === 123) {
+        window.onload = function () { 
+            // Matikan Klik Kanan secara absolut
+            document.addEventListener("contextmenu", function (e) { 
                 e.preventDefault();
-                showSecurityToast('Tombol F12 telah dinonaktifkan.');
-                return false;
-            }
-            
-            // Ctrl+Shift+I (Inspect)
-            if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
-                e.preventDefault();
-                showSecurityToast('Inspect element dinonaktifkan.');
-                return false;
-            }
+            }, false);
 
-            // Ctrl+Shift+C (Element Selector)
-            if (e.ctrlKey && e.shiftKey && e.keyCode === 67) {
-                e.preventDefault();
-                showSecurityToast('Fungsi seleksi element dinonaktifkan.');
-                return false;
-            }
+            // Matikan Shortcut Pengintip Kode
+            document.addEventListener("keydown", function (e) {
+                // Ctrl+Shift+I (Inspect)
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 73) { 
+                    disabledEvent(e);
+                }
+                // Ctrl+Shift+J (Console)
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 74) { 
+                    disabledEvent(e);
+                } 
+                // Ctrl+S (Save Page)
+                if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) { 
+                    disabledEvent(e);
+                }
+                // Ctrl+U (View Page Source)
+                if (e.ctrlKey && e.keyCode == 85) { 
+                    disabledEvent(e);
+                }
+                // F12 Key
+                if (e.keyCode == 123) { 
+                    disabledEvent(e);
+                } 
+            }, false);
 
-            // Ctrl+Shift+J (Console)
-            if (e.ctrlKey && e.shiftKey && e.keyCode === 74) {
+            function disabledEvent(e) { 
+                if (e.stopPropagation) { 
+                    e.stopPropagation();
+                } else if (window.event) { 
+                    window.event.cancelBubble = true;
+                } 
                 e.preventDefault();
-                showSecurityToast('Console panel dinonaktifkan.');
                 return false;
             }
-
-            // Ctrl+U (View Source Code)
-            if (e.ctrlKey && e.keyCode === 85) {
-                e.preventDefault();
-                showSecurityToast('Melihat kode sumber dinonaktifkan.');
-                return false;
-            }
-
-            // Ctrl+S (Save Page)
-            if (e.ctrlKey && e.keyCode === 83) {
-                e.preventDefault();
-                showSecurityToast('Menyimpan halaman dinonaktifkan.');
-                return false;
-            }
-        });
+        };
     </script>
 </body>
 </html>
